@@ -1,0 +1,131 @@
+.container {
+    margin: 40px;
+}
+
+.article {
+    width: 1440px;
+    padding: 50px 150px;
+}
+
+.article-wrapper {
+    display: flex;
+    padding: 60px 220px;
+    height: 400px;
+}
+
+.article__image {
+    width: var(--image-width-block);
+}
+
+.article__picture {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.article__content {
+    width: calc(100% - var(--image-width-block));
+    background-color: var(--white-color);
+    padding: 30px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content__heading {
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--dark-garyish-blue-color);
+}
+
+.content__description {
+    color: var(--desaturated-dark-blue-color);
+    margin: 18px 0;
+    display: block;
+}
+
+.content__other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.other__info {
+    display: flex;
+    align-items: center;
+}
+
+.info__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info__name {
+    color: var(--dark-garyish-blue-color);
+}
+
+.info__date {
+    color: var(--desaturated-dark-blue-color);
+}
+
+.other__icon {
+    width: 40px;
+    height: 40px;
+    background-color:  rgba(46, 96, 161, 0.15);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon__share {
+
+}
+
+.other__icon--click {
+    background-color: var(--dark-garyish-blue-color);
+}
+
+.icon__share--click {
+    
+}
+            
+.icon__share {
+    color: var(--white-color);
+}
+
+.icon__share-link {
+    display: none;      
+}
+
+.icon__share-link--open {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: -75px;
+    width: 240px;
+    height: 50px;
+    padding-left: 36px;
+    background-color: var(--dark-garyish-blue-color);
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px var(--desaturated-dark-blue-color);
+}
+
+.icon__share-link::after {
+    content: '';
+    display: block;
+    border-width: 10px 12px;
+    border-color: var(--dark-garyish-blue-color) transparent transparent transparent;
+    border-style: solid; 
+    position: relative;
+    bottom: -35px;
+    left: -108px;
+}
+
+.share-link__text {
+    color: var(--grayish-blue-color);
+}
