@@ -1,21 +1,15 @@
 function clickShare() {
-    var contentOtherElement = document.querySelector('.content__other');
-    var otherIconElement = contentOtherElement.querySelector('.other__icon');
-    otherIconElement.addEventListener('click', function (e) {
+    var contentOther = document.querySelector('.content__other');
+    var iconShareDirect = contentOther.querySelector('.icon__share-direct');
+    var iconShareLink = contentOther.querySelector('.icon__share-link');
+    var otherIcon = contentOther.querySelector('.other__icon');
+    var iconShare = contentOther.querySelector('.icon__share');
+
+    iconShareDirect.addEventListener('click', function (e) {
         e.preventDefault();
-        var iconShareLink = contentOtherElement.querySelector('.icon__share-link');
-        var contentInfo = contentOtherElement.querySelector('.other__info');
-        var iconShare = otherIconElement.querySelector('.icon__share');
-        if(iconShareLink.classList.contains('icon__share-link--open')) {
-            iconShareLink.classList.remove('icon__share-link--open');
-            contentInfo.classList.remove('icon__share-mobile--open');
-            otherIconElement.classList.remove('other__icon-mobile--open');
-            iconShare.classList.remove('icon__share--click');
-        } else {
-            iconShareLink.classList.add('icon__share-link--open');
-            contentInfo.classList.add('icon__share-mobile--open');
-            otherIconElement.classList.add('other__icon-mobile--open');
-            iconShare.classList.add('icon__share--click');
-        }
+        iconShareLink.classList.toggle('icon__share-link--active');
+        iconShareDirect.classList.toggle('icon__share-direct--active');
+        otherIcon.classList.toggle('other__icon-mobile--active');
+        iconShare.classList.toggle('icon__share--active');
     });
 }
