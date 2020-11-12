@@ -6,6 +6,7 @@
     --grayish-blue-color: hsl(212, 23%, 69%);
     --light-grayish-blue: hsl(210, 46%, 95%);
     --image-width-block: 40%;
+    --content-padding: 30px;
 }
 
 * {
