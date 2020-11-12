@@ -66,6 +66,7 @@
         box-shadow: none;
         padding-left: 0;
         justify-content: space-evenly;
+        animation: none;
     }
 
     .icon__share-link::after {
